@@ -278,6 +278,39 @@ window.addEventListener("load", () => {
   }, 850);
 });
 </script>
+  <script>
+  const formularioDiagnostico = document.querySelector("#formulario-diagnostico");
+
+  if (formularioDiagnostico) {
+    formularioDiagnostico.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const dados = new FormData(formularioDiagnostico);
+
+      const nome = dados.get("nome");
+      const whatsapp = dados.get("whatsapp");
+      const empresa = dados.get("empresa");
+      const segmento = dados.get("segmento");
+      const link = dados.get("link") || "Não informado";
+      const servico = dados.get("servico");
+      const objetivo = dados.get("objetivo");
+
+      const mensagem = `Olá, Andrey! Vim pelo formulário de diagnóstico da Roque Ads.
+
+Nome: ${nome}
+WhatsApp: ${whatsapp}
+Empresa: ${empresa}
+Segmento: ${segmento}
+Instagram, site ou Google: ${link}
+Serviço de interesse: ${servico}
+Objetivo: ${objetivo}`;
+
+      const linkWhatsApp = `https://wa.me/5551992755891?text=${encodeURIComponent(mensagem)}`;
+
+      window.open(linkWhatsApp, "_blank");
+    });
+  }
+</script>
 <footer class="rodape">
   <div class="rodape-conteudo">
   <a class="rodape-logo" href="#topo" aria-label="Roque Ads">
