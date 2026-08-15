@@ -960,4 +960,16 @@ h3,
   .botao-diagnostico {
     grid-column: auto;
   }
+}.menu a.menu-diagnostico {
+  background-color: #2563eb;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 700;
+  margin: -10px 0;
+  padding: 10px 16px;
+}
+
+.menu a.menu-diagnostico:hover {
+  background-color: #1d4ed8;
+  color: #ffffff;
 }
