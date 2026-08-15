@@ -858,4 +858,106 @@ h3,
   color: #ffffff;
 }#sobre {
   scroll-margin-top: 70px;
+}/* Seção de diagnóstico */
+.diagnostico {
+  background-color: #ffffff;
+  padding: 110px 24px;
+}
+
+.diagnostico-intro,
+.formulario-diagnostico {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.diagnostico-intro {
+  text-align: center;
+}
+
+.diagnostico-intro h2 {
+  margin-bottom: 20px;
+}
+
+.diagnostico-intro > p {
+  color: #475569;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 auto 42px;
+  max-width: 680px;
+}
+
+.formulario-diagnostico {
+  background-color: #f5f8ff;
+  border: 1px solid #cfe0ff;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(37, 99, 235, 0.10);
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 42px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.campo-completo {
+  grid-column: 1 / -1;
+}
+
+.campo label {
+  color: #111827;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111827;
+  font: inherit;
+  outline: none;
+  padding: 14px;
+  width: 100%;
+}
+
+.campo textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.botao-diagnostico {
+  border: 0;
+  cursor: pointer;
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+@media (max-width: 700px) {
+  .diagnostico {
+    padding: 80px 24px;
+  }
+
+  .formulario-diagnostico {
+    grid-template-columns: 1fr;
+    padding: 26px 20px;
+  }
+
+  .campo-completo,
+  .botao-diagnostico {
+    grid-column: auto;
+  }
 }
