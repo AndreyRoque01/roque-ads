@@ -313,5 +313,27 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const destino = document.querySelector(link.getAttribute("href"));
+
+      if (!destino) return;
+
+      event.preventDefault();
+
+      destino.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
+      history.replaceState(
+        null,
+        "",
+        window.location.pathname + window.location.search
+      );
+    });
+  });
+</script>
 </body>
 </html>
