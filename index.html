@@ -11,7 +11,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
 
 <body id="topo">
 <div class="carregamento" aria-hidden="true">
@@ -19,7 +18,6 @@
     <span class="logo-carregamento-r">R</span>
     <span class="logo-carregamento-ads">ADS</span>
   </div>
-</div>
 </div>
     <nav class="menu-lateral" aria-label="Navegação rápida">
   <a href="#topo">Início</a>
@@ -35,7 +33,7 @@
 </a>
 
     <nav class="menu">
-      <a href="#">Início</a>
+      <a href="#topo">Início</a>
       <a href="#servicos">Serviços</a>
       <a href="#sobre">Sobre mim</a>
       <a href="#contato">Contato</a>
@@ -271,13 +269,68 @@
   window.addEventListener("scroll", () => {
     menuLateral.classList.toggle("mostrar", window.scrollY > window.innerHeight * 0.8);
   });
-window.addEventListener("load", () => {
-  const carregamento = document.querySelector(".carregamento");
 
-  setTimeout(() => {
-    carregamento.classList.add("sumir");
-  }, 850);
-});
+  window.addEventListener("load", () => {
+    const carregamento = document.querySelector(".carregamento");
+
+    setTimeout(() => {
+      carregamento.classList.add("sumir");
+    }, 850);
+  });
+
+  const limparAncoraDaUrl = () => {
+    history.replaceState(
+      null,
+      "",
+      window.location.pathname + window.location.search
+    );
+  };
+
+  document.addEventListener("click", (event) => {
+    const linkInterno = event.target.closest('a[href^="#"]');
+
+    if (!linkInterno) return;
+
+    const referencia = linkInterno.getAttribute("href");
+    const idDestino = referencia.replace("#", "");
+    const destino = idDestino
+      ? document.getElementById(idDestino)
+      : document.getElementById("topo");
+
+    if (!destino) return;
+
+    event.preventDefault();
+
+    if (idDestino === "topo" || !idDestino) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    } else {
+      destino.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+
+    limparAncoraDaUrl();
+  });
+
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
+
+  window.addEventListener("pageshow", () => {
+    if (window.location.hash) {
+      limparAncoraDaUrl();
+    }
+
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto"
+    });
+  });
 </script>
   <script>
   const formularioDiagnostico = document.querySelector("#formulario-diagnostico");
