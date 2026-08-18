@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Roque Ads | Tráfego Pago, Sites e Estrutura Digital</title>
   <meta name="description" content="Gestão de tráfego pago, criação de sites e landing pages, consultoria e estrutura digital para empresas e comércios locais.">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%2064%2064'%3E%3Crect width='64' height='64' rx='14' fill='%230b1020'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial' font-size='40' font-weight='800' fill='white'%3ER%3C/text%3E%3Ccircle cx='53' cy='12' r='5' fill='%231677ff'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,6 +57,11 @@
 
   <a class="botao" href="#servicos">Conheça as soluções</a>
 
+  <div class="hero-detalhes">
+    <span>Tráfego Pago</span>
+    <span>Criação de Sites</span>
+    <span>Estrutura Digital</span>
+  </div>
 </main>
 <section class="problema">
   <div class="problema-intro">
@@ -756,54 +761,32 @@
   </form>
 </section>
   <section class="contato" id="contato">
-  <div class="contato-conteudo">
-    <div class="contato-intro">
-      <p class="sobretitulo">VAMOS CONVERSAR?</p>
+  <p class="sobretitulo">VAMOS CONVERSAR?</p>
 
-      <h2>O próximo passo da sua empresa começa com uma conversa.</h2>
+  <h2>Pronto para dar o próximo passo no digital?</h2>
 
-      <p>
-        Conte um pouco sobre o seu negócio. Vamos entender o momento atual e
-        encontrar a solução digital que realmente faz sentido para você.
-      </p>
-    </div>
+  <p>
+    Me chama no WhatsApp para entender qual solução digital faz mais sentido para o seu negócio.
+  </p>
 
-    <div class="contato-painel">
-      <div class="contato-painel-topo">
-        <span class="contato-status"></span>
-        Atendimento online
-      </div>
+  <a
+    class="botao botao-whatsapp"
+    href="https://wa.me/5551992755891?text=Olá%2C%20Andrey!%20Vim%20pelo%20site%20da%20Roque%20Ads%20e%20quero%20entender%20qual%20solução%20digital%20faz%20mais%20sentido%20para%20o%20meu%20negócio."
+    target="_blank"
+  >
+    Falar no WhatsApp
+  </a>
 
-      <h3>Fale diretamente com a Roque Ads.</h3>
+  <div class="contato-emails">
+    <p>
+      <strong>Atendimento</strong>
+      <a href="mailto:contato@roqueads.com.br">contato@roqueads.com.br</a>
+    </p>
 
-      <p>
-        Pelo WhatsApp, você explica seu objetivo e recebe um direcionamento
-        inicial para a sua empresa.
-      </p>
-
-      <a
-        class="botao botao-whatsapp"
-        href="https://wa.me/5551992755891?text=Olá%2C%20Andrey!%20Vim%20pelo%20site%20da%20Roque%20Ads%20e%20quero%20entender%20qual%20solução%20digital%20faz%20mais%20sentido%20para%20o%20meu%20negócio."
-        target="_blank"
-        rel="noopener"
-      >
-        Falar no WhatsApp <span aria-hidden="true">↗</span>
-      </a>
-
-      <div class="contato-canais">
-        <a href="mailto:contato@roqueads.com.br">
-          <span>Atendimento</span>
-          contato@roqueads.com.br
-        </a>
-
-        <a href="mailto:financeiro@roqueads.com.br">
-          <span>Financeiro</span>
-          financeiro@roqueads.com.br
-        </a>
-      </div>
-
-      <p class="contato-base">Base em Alvorada/RS · Atendimento em todo o estado</p>
-    </div>
+    <p>
+      <strong>Financeiro</strong>
+      <a href="mailto:financeiro@roqueads.com.br">financeiro@roqueads.com.br</a>
+    </p>
   </div>
 </section>
 <script>
@@ -855,6 +838,7 @@
         block: "start"
       });
     }
+
     limparAncoraDaUrl();
   });
 
@@ -1262,7 +1246,7 @@
       const dados = new FormData(formularioDiagnostico);
 
       const nome = dados.get("nome");
-      const email = dados.get("email");
+const email = dados.get("email");
       const empresa = dados.get("empresa");
       const segmento = dados.get("segmento");
       const link = dados.get("link") || "Não informado";
