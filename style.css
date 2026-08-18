@@ -2697,38 +2697,19 @@ h3,
 .contato-status {
   background: #25d366;
   border-radius: 50%;
-  box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.32);
-  height: 8px;
-  width: 8px;
-  animation: status-online 2s ease-in-out infinite;
-}
-.contato-status {
-  background: #25d366;
-  border-radius: 50%;
   height: 8px;
   width: 8px;
   animation: status-online-premium 2.8s ease-in-out infinite;
 }
 
-@keyframes status-online {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.30);
-  }
-
-  50% {
-    transform: scale(1.12);
-    opacity: 0.9;
-    box-shadow: 0 0 0 8px rgba(37, 211, 102, 0.10);
-  }
-
+@keyframes status-online-premium {
+  0%,
   100% {
-    transform: scale(1);
     opacity: 1;
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    box-shadow:
+      0 0 0 5px rgba(37, 211, 102, 0.10),
+      0 0 8px rgba(37, 211, 102, 0.28);
   }
-}
 
   50% {
     opacity: 0.82;
@@ -2737,12 +2718,20 @@ h3,
       0 0 14px rgba(37, 211, 102, 0.42);
   }
 }
+
+.contato-painel h3 {
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: -1px;
+  line-height: 1.14;
+  margin: 30px 0 14px;
+}
+
 .contato-painel > p {
   color: #c7d4ea;
   line-height: 1.7;
   margin: 0 0 28px;
 }
-
 .contato-painel .botao-whatsapp {
   align-items: center;
   display: inline-flex;
