@@ -832,12 +832,17 @@
         top: 0,
         behavior: "smooth"
       });
-    } else {
-      destino.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    }
+   } else if (window.matchMedia("(min-width: 861px)").matches) {
+  window.scrollTo({
+    top: Math.round(window.scrollY + destino.getBoundingClientRect().top),
+    behavior: "smooth"
+  });
+} else {
+  destino.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}
 
     limparAncoraDaUrl();
   });
