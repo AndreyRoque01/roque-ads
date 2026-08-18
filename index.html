@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Roque Ads | Tráfego Pago, Sites e Estrutura Digital</title>
-  <meta name="description" content="Gestão de tráfego pago, criação de sites, consultoria e estrutura digital para empresas e comércios locais.">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="description" content="Gestão de tráfego pago, criação de sites e landing pages, consultoria e estrutura digital para empresas e comércios locais.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%2064%2064'%3E%3Crect width='64' height='64' rx='14' fill='%230b1020'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial' font-size='40' font-weight='800' fill='white'%3ER%3C/text%3E%3Ccircle cx='53' cy='12' r='5' fill='%231677ff'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,25 +19,26 @@
     <span class="logo-carregamento-ads">ADS</span>
   </div>
 </div>
-    <nav class="menu-lateral" aria-label="Navegação rápida">
-  <a href="#topo">Início</a>
-  <a href="#servicos">Serviços</a>
-  <a href="#processo">Como funciona</a>
-  <a href="#sobre">Sobre</a>
-  <a href="#contato">Contato</a>
-</nav>
+  <nav class="menu-lateral" aria-label="Navegação rápida">
+    <a href="#topo">Início</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#diagnostico">Diagnóstico</a>
+    <a href="#contato">Contato</a>
+  </nav>
   <header class="cabecalho">
     <a class="logo logo-nova" href="#topo" aria-label="Roque Ads">
   <span class="logo-roque">ROQUE</span>
   <span class="logo-ads">ADS</span>
 </a>
 
-    <nav class="menu">
+    <nav class="menu" aria-label="Navegação principal">
       <a href="#topo">Início</a>
       <a href="#servicos">Serviços</a>
-      <a href="#sobre">Sobre mim</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#atuacao">Atuação</a>
+      <a href="#sobre">Sobre</a>
       <a href="#contato">Contato</a>
-      <a class="menu-diagnostico" href="#diagnostico">Solicitar diagnóstico</a>
+      <a class="menu-diagnostico" href="#diagnostico">Diagnóstico</a>
     </nav>
   </header>
 
@@ -96,27 +97,378 @@
   <h2>Estratégia e estrutura para o seu negócio crescer no digital.</h2>
 
   <div class="cards">
-    <article class="card">
+    <article
+      class="card card-servico"
+      data-servico="trafego"
+      role="button"
+      tabindex="0"
+      aria-haspopup="dialog"
+      aria-controls="modal-servico"
+      aria-label="Abrir detalhes sobre Gestão de Tráfego Pago"
+    >
+      <div class="card-ilustracao">
+        <svg viewBox="0 0 520 230" role="img" aria-labelledby="ilustra-trafego-titulo">
+          <title id="ilustra-trafego-titulo">Painel de campanha alcançando um público estratégico</title>
+          <g class="ilustra-grade" aria-hidden="true">
+            <path d="M20 48H500M20 92H500M20 136H500M20 180H500"></path>
+            <path d="M76 18V212M148 18V212M220 18V212M292 18V212M364 18V212M436 18V212"></path>
+          </g>
+          <rect class="ilustra-painel" x="38" y="31" width="292" height="168" rx="18"></rect>
+          <circle class="ilustra-ponto-suave" cx="61" cy="55" r="5"></circle>
+          <path class="ilustra-linha-suave" d="M78 55H177M57 82H307"></path>
+          <path class="ilustra-barra" d="M70 164V139M105 164V117M140 164V128M175 164V94M210 164V108M245 164V75M280 164V91"></path>
+          <path class="ilustra-base" d="M59 165H309"></path>
+          <path class="ilustra-neon ilustra-rota-card" d="M180 105C254 52 327 57 389 101"></path>
+          <path class="ilustra-neon-forte" d="M377 95L391 102L382 114"></path>
+          <circle class="ilustra-alvo-suave" cx="424" cy="116" r="64"></circle>
+          <circle class="ilustra-alvo" cx="424" cy="116" r="39"></circle>
+          <circle class="ilustra-neon-fill" cx="424" cy="116" r="10"></circle>
+          <circle class="ilustra-ponto" cx="471" cy="65" r="5"></circle>
+          <circle class="ilustra-ponto" cx="481" cy="151" r="5"></circle>
+          <circle class="ilustra-ponto" cx="383" cy="175" r="5"></circle>
+        </svg>
+      </div>
       <h3>Gestão de Tráfego Pago</h3>
       <p>Planejamento, criação e otimização de campanhas no Facebook e Instagram para gerar oportunidades para sua empresa.</p>
+      <span class="card-acao" aria-hidden="true">Conhecer o serviço <span>↗</span></span>
     </article>
 
-    <article class="card">
+    <article
+      class="card card-servico"
+      data-servico="consultoria"
+      role="button"
+      tabindex="0"
+      aria-haspopup="dialog"
+      aria-controls="modal-servico"
+      aria-label="Abrir detalhes sobre Consultoria Digital"
+    >
+      <div class="card-ilustracao">
+        <svg viewBox="0 0 520 230" role="img" aria-labelledby="ilustra-consultoria-titulo">
+          <title id="ilustra-consultoria-titulo">Informações digitais organizadas em um direcionamento estratégico</title>
+          <g class="ilustra-grade" aria-hidden="true">
+            <path d="M20 48H500M20 92H500M20 136H500M20 180H500"></path>
+            <path d="M76 18V212M148 18V212M220 18V212M292 18V212M364 18V212M436 18V212"></path>
+          </g>
+          <rect class="ilustra-painel" x="39" y="42" width="132" height="58" rx="13"></rect>
+          <rect class="ilustra-painel" x="39" y="128" width="132" height="58" rx="13"></rect>
+          <rect class="ilustra-painel" x="207" y="85" width="132" height="58" rx="13"></rect>
+          <path class="ilustra-linha-suave" d="M61 66H139M61 78H116M61 152H139M61 164H124M229 109H307M229 121H286"></path>
+          <path class="ilustra-conexao" d="M171 71C199 71 190 101 207 108M171 157C199 157 190 127 207 120M339 114H383"></path>
+          <circle class="ilustra-ponto" cx="190" cy="114" r="6"></circle>
+          <circle class="ilustra-alvo-suave" cx="424" cy="114" r="64"></circle>
+          <path class="ilustra-neon ilustra-rota-card" d="M367 155C391 145 398 128 424 114C448 101 462 82 474 55"></path>
+          <circle class="ilustra-neon-fill" cx="424" cy="114" r="10"></circle>
+          <path class="ilustra-neon-forte" d="M462 61L476 52L479 69"></path>
+          <circle class="ilustra-ponto-suave" cx="367" cy="155" r="5"></circle>
+        </svg>
+      </div>
       <h3>Consultoria Digital</h3>
       <p>Análise da presença digital do negócio, diagnóstico de campanhas e direcionamento estratégico.</p>
+      <span class="card-acao" aria-hidden="true">Conhecer o serviço <span>↗</span></span>
     </article>
 
-    <article class="card">
+    <article
+      class="card card-servico"
+      data-servico="sites"
+      role="button"
+      tabindex="0"
+      aria-haspopup="dialog"
+      aria-controls="modal-servico"
+      aria-label="Abrir detalhes sobre Sites e Landing Pages"
+    >
+      <div class="card-ilustracao">
+        <svg viewBox="0 0 520 230" role="img" aria-labelledby="ilustra-sites-titulo">
+          <title id="ilustra-sites-titulo">Site profissional adaptado para computador e celular</title>
+          <g class="ilustra-grade" aria-hidden="true">
+            <path d="M20 48H500M20 92H500M20 136H500M20 180H500"></path>
+            <path d="M76 18V212M148 18V212M220 18V212M292 18V212M364 18V212M436 18V212"></path>
+          </g>
+          <rect class="ilustra-painel" x="34" y="28" width="342" height="174" rx="18"></rect>
+          <path class="ilustra-base" d="M34 61H376"></path>
+          <circle class="ilustra-ponto-suave" cx="56" cy="45" r="4"></circle>
+          <circle class="ilustra-ponto-suave" cx="70" cy="45" r="4"></circle>
+          <circle class="ilustra-ponto-suave" cx="84" cy="45" r="4"></circle>
+          <rect class="ilustra-bloco" x="57" y="82" width="135" height="15" rx="6"></rect>
+          <rect class="ilustra-bloco-suave" x="57" y="109" width="189" height="8" rx="4"></rect>
+          <rect class="ilustra-bloco-suave" x="57" y="126" width="152" height="8" rx="4"></rect>
+          <rect class="ilustra-botao" x="57" y="153" width="82" height="24" rx="8"></rect>
+          <rect class="ilustra-superficie" x="272" y="82" width="78" height="95" rx="12"></rect>
+          <path class="ilustra-neon ilustra-rota-card" d="M326 107C363 77 397 74 420 91"></path>
+          <rect class="ilustra-painel ilustra-celular" x="402" y="45" width="84" height="157" rx="18"></rect>
+          <path class="ilustra-base" d="M402 72H486"></path>
+          <rect class="ilustra-bloco" x="417" y="91" width="54" height="10" rx="5"></rect>
+          <rect class="ilustra-bloco-suave" x="417" y="113" width="54" height="7" rx="3.5"></rect>
+          <rect class="ilustra-bloco-suave" x="417" y="128" width="42" height="7" rx="3.5"></rect>
+          <rect class="ilustra-botao" x="417" y="151" width="43" height="20" rx="7"></rect>
+          <circle class="ilustra-neon-fill" cx="444" cy="186" r="4"></circle>
+        </svg>
+      </div>
       <h3>Criação de Sites</h3>
-<p>Sites institucionais e landing pages profissionais, responsivos, integrados aos canais da empresa e preparados para presença no Google.</p>
+      <span class="card-servico-tag">Sites institucionais • Landing pages</span>
+      <p>Sites institucionais para apresentar sua empresa e landing pages focadas em campanhas e conversão, sempre responsivos e integrados aos seus canais.</p>
+      <span class="card-acao" aria-hidden="true">Conhecer o serviço <span>↗</span></span>
     </article>
 
-    <article class="card">
+    <article
+      class="card card-servico"
+      data-servico="estrutura"
+      role="button"
+      tabindex="0"
+      aria-haspopup="dialog"
+      aria-controls="modal-servico"
+      aria-label="Abrir detalhes sobre Estrutura Digital da Empresa"
+    >
+      <div class="card-ilustracao">
+        <svg viewBox="0 0 520 230" role="img" aria-labelledby="ilustra-estrutura-titulo">
+          <title id="ilustra-estrutura-titulo">Canais digitais conectados em uma estrutura profissional</title>
+          <g class="ilustra-grade" aria-hidden="true">
+            <path d="M20 48H500M20 92H500M20 136H500M20 180H500"></path>
+            <path d="M76 18V212M148 18V212M220 18V212M292 18V212M364 18V212M436 18V212"></path>
+          </g>
+          <path class="ilustra-conexao" d="M260 115L127 66M260 115L393 66M260 115L127 167M260 115L393 167"></path>
+          <circle class="ilustra-alvo-suave" cx="260" cy="115" r="50"></circle>
+          <circle class="ilustra-alvo" cx="260" cy="115" r="28"></circle>
+          <circle class="ilustra-neon-fill" cx="260" cy="115" r="9"></circle>
+          <rect class="ilustra-painel" x="72" y="35" width="110" height="64" rx="14"></rect>
+          <path class="ilustra-base" d="M72 54H182"></path>
+          <circle class="ilustra-ponto-suave" cx="89" cy="45" r="3"></circle>
+          <path class="ilustra-linha-suave" d="M91 72H160M91 83H139"></path>
+          <rect class="ilustra-painel" x="338" y="35" width="110" height="64" rx="14"></rect>
+          <path class="ilustra-neon" d="M365 57H421V80H383L372 90V80H365Z"></path>
+          <rect class="ilustra-painel" x="72" y="136" width="110" height="64" rx="14"></rect>
+          <path class="ilustra-neon" d="M127 153C114 153 104 163 104 176C104 190 127 195 127 195C127 195 150 190 150 176C150 163 140 153 127 153Z"></path>
+          <circle class="ilustra-neon-fill" cx="127" cy="175" r="5"></circle>
+          <rect class="ilustra-painel" x="338" y="136" width="110" height="64" rx="14"></rect>
+          <path class="ilustra-neon" d="M360 155H426V183H360ZM360 155L393 175L426 155"></path>
+          <circle class="ilustra-ponto" cx="127" cy="66" r="5"></circle>
+          <circle class="ilustra-ponto" cx="393" cy="66" r="5"></circle>
+          <circle class="ilustra-ponto" cx="127" cy="167" r="5"></circle>
+          <circle class="ilustra-ponto" cx="393" cy="167" r="5"></circle>
+        </svg>
+      </div>
       <h3>Estrutura Digital da Empresa</h3>
       <p>Configuração de Instagram, Facebook, WhatsApp Business, Perfil da Empresa no Google, domínio, e-mail profissional e integração dos canais.</p>
+      <span class="card-acao" aria-hidden="true">Conhecer o serviço <span>↗</span></span>
     </article>
   </div>
 </section>
+<div class="modal-servico" id="modal-servico" aria-hidden="true" hidden>
+  <div class="modal-servico-fundo" data-fechar-modal></div>
+
+  <section
+    class="modal-servico-painel"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-servico-titulo"
+    aria-describedby="modal-servico-resumo modal-servico-ideal"
+    tabindex="-1"
+  >
+    <button class="modal-servico-fechar" type="button" data-fechar-modal aria-label="Fechar detalhes do serviço">
+      <span aria-hidden="true">×</span>
+    </button>
+
+    <p class="modal-servico-etiqueta">SOLUÇÃO ROQUE ADS</p>
+    <h3 id="modal-servico-titulo"></h3>
+    <div class="modal-servico-imagem" aria-hidden="true"></div>
+
+    <div class="modal-sites" hidden>
+      <div class="modal-sites-abas" role="tablist" aria-label="Escolha entre site institucional e landing page">
+        <button
+          class="modal-site-aba ativo"
+          id="modal-site-aba-site"
+          type="button"
+          role="tab"
+          aria-selected="true"
+          aria-controls="modal-site-painel-site"
+          data-modal-site-tipo="site"
+        >
+          Site institucional
+        </button>
+        <button
+          class="modal-site-aba"
+          id="modal-site-aba-landing"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="modal-site-painel-landing"
+          tabindex="-1"
+          data-modal-site-tipo="landing"
+        >
+          Landing page
+        </button>
+      </div>
+
+      <div
+        class="modal-site-painel"
+        id="modal-site-painel-site"
+        role="tabpanel"
+        aria-labelledby="modal-site-aba-site"
+        data-modal-site-painel="site"
+      >
+        <div>
+          <span>O que é</span>
+          <p id="modal-site-resumo-site">Um site institucional é a presença digital completa da empresa: apresenta a marca, organiza os serviços e oferece caminhos claros para conhecer e contatar o negócio.</p>
+        </div>
+        <div>
+          <span>Para quem é indicado</span>
+          <p id="modal-site-ideal-site">Empresas que precisam transmitir autoridade, apresentar diferentes serviços e construir uma presença profissional permanente.</p>
+        </div>
+      </div>
+
+      <div
+        class="modal-site-painel"
+        id="modal-site-painel-landing"
+        role="tabpanel"
+        aria-labelledby="modal-site-aba-landing"
+        data-modal-site-painel="landing"
+        hidden
+      >
+        <div>
+          <span>O que é</span>
+          <p id="modal-site-resumo-landing">Uma landing page é uma página criada em torno de uma única oferta e uma ação principal, conduzindo o visitante diretamente para o contato, cadastro ou pedido.</p>
+        </div>
+        <div>
+          <span>Para quem é indicado</span>
+          <p id="modal-site-ideal-landing">Campanhas de anúncios, lançamentos ou serviços específicos que precisam transformar visitas em oportunidades com menos distrações.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-servico-grid">
+      <div class="modal-servico-explicacao">
+        <span>O que é o serviço</span>
+        <p class="modal-servico-resumo" id="modal-servico-resumo"></p>
+      </div>
+
+      <div class="modal-servico-ideal">
+        <span>Para quem é indicado</span>
+        <p id="modal-servico-ideal"></p>
+      </div>
+    </div>
+
+    <a class="botao modal-servico-cta" href="#diagnostico">
+      Solicitar diagnóstico
+    </a>
+  </section>
+</div>
+
+<section class="comparacao-web" id="site-ou-landing">
+  <div class="comparacao-web-cabecalho">
+    <p class="sobretitulo">ESCOLHA A ESTRUTURA CERTA</p>
+    <h2>Site ou landing page: qual sua empresa precisa?</h2>
+    <p>
+      As duas soluções são profissionais, mas cumprem objetivos diferentes.
+      Selecione uma opção e veja qual combina com o momento do seu negócio.
+    </p>
+  </div>
+
+  <div class="comparacao-web-abas" role="tablist" aria-label="Comparação entre site institucional e landing page">
+    <button
+      class="comparacao-web-card ativo"
+      id="comparacao-aba-site"
+      type="button"
+      role="tab"
+      aria-selected="true"
+      aria-controls="comparacao-painel-site"
+      data-comparacao-tipo="site"
+    >
+      <span class="comparacao-preview comparacao-preview-site" aria-hidden="true">
+        <span class="preview-barra">
+          <span></span><span></span><span></span><i></i>
+        </span>
+        <span class="preview-site-menu">
+          <b>R ADS</b><i></i><i></i><i></i><em></em>
+        </span>
+        <span class="preview-site-hero">
+          <span class="preview-site-copy"><i></i><i></i><i></i><b></b></span>
+          <span class="preview-site-imagem"><i></i><i></i></span>
+        </span>
+        <span class="preview-site-secoes"><i></i><i></i><i></i></span>
+      </span>
+      <span class="comparacao-card-numero">01</span>
+      <span class="comparacao-card-etiqueta">PRESENÇA COMPLETA</span>
+      <span class="comparacao-card-titulo">Site institucional</span>
+      <span class="comparacao-card-texto">A casa digital da empresa para apresentar marca, serviços e canais de contato.</span>
+      <span class="comparacao-card-acao">Entender quando escolher <i aria-hidden="true">↗</i></span>
+    </button>
+
+    <button
+      class="comparacao-web-card"
+      id="comparacao-aba-landing"
+      type="button"
+      role="tab"
+      aria-selected="false"
+      aria-controls="comparacao-painel-landing"
+      tabindex="-1"
+      data-comparacao-tipo="landing"
+    >
+      <span class="comparacao-preview comparacao-preview-landing" aria-hidden="true">
+        <span class="preview-barra">
+          <span></span><span></span><span></span><i></i>
+        </span>
+        <span class="preview-landing-conteudo">
+          <span class="preview-landing-copy"><i></i><i></i><i></i><b></b></span>
+          <span class="preview-landing-form"><i></i><i></i><i></i><b></b></span>
+        </span>
+        <span class="preview-landing-fluxo"></span>
+      </span>
+      <span class="comparacao-card-numero">02</span>
+      <span class="comparacao-card-etiqueta">FOCO EM CONVERSÃO</span>
+      <span class="comparacao-card-titulo">Landing page</span>
+      <span class="comparacao-card-texto">Uma página direcionada para uma oferta e uma ação principal.</span>
+      <span class="comparacao-card-acao">Entender quando escolher <i aria-hidden="true">↗</i></span>
+    </button>
+  </div>
+
+  <div class="comparacao-web-paineis">
+    <article
+      class="comparacao-web-painel"
+      id="comparacao-painel-site"
+      role="tabpanel"
+      aria-labelledby="comparacao-aba-site"
+      data-comparacao-painel="site"
+    >
+      <div class="comparacao-painel-texto">
+        <p class="comparacao-painel-etiqueta">ESCOLHA UM SITE QUANDO...</p>
+        <h3>Sua empresa precisa ser apresentada por completo.</h3>
+        <p>O site organiza a marca, explica diferentes serviços e permanece como uma referência profissional para clientes que pesquisam o negócio.</p>
+      </div>
+      <div class="comparacao-painel-sinais" aria-label="Situações indicadas para um site institucional">
+        <span>Apresentar vários serviços</span>
+        <span>Transmitir autoridade</span>
+        <span>Fortalecer a presença permanente</span>
+      </div>
+      <a class="botao comparacao-web-cta" href="#diagnostico" data-selecionar-servico="Criação de Site Institucional">Quero um site institucional</a>
+    </article>
+
+    <article
+      class="comparacao-web-painel"
+      id="comparacao-painel-landing"
+      role="tabpanel"
+      aria-labelledby="comparacao-aba-landing"
+      data-comparacao-painel="landing"
+      hidden
+    >
+      <div class="comparacao-painel-texto">
+        <p class="comparacao-painel-etiqueta">ESCOLHA UMA LANDING PAGE QUANDO...</p>
+        <h3>Existe uma oferta e uma ação principal.</h3>
+        <p>A landing page reduz distrações e conduz quem veio de uma campanha diretamente para o contato, cadastro ou pedido.</p>
+      </div>
+      <div class="comparacao-painel-sinais" aria-label="Situações indicadas para uma landing page">
+        <span>Receber tráfego de anúncios</span>
+        <span>Divulgar uma oferta específica</span>
+        <span>Transformar visitas em contatos</span>
+      </div>
+      <a class="botao comparacao-web-cta" href="#diagnostico" data-selecionar-servico="Criação de Landing Page">Quero uma landing page</a>
+    </article>
+  </div>
+
+  <div class="comparacao-web-resumo" aria-label="Resumo da comparação">
+    <p><span>Quer apresentar toda a empresa?</span><strong>Site institucional.</strong></p>
+    <p><span>Quer divulgar uma oferta e gerar contatos?</span><strong>Landing page.</strong></p>
+  </div>
+</section>
+
 <section class="processo" id="processo">
   <div class="processo-intro">
     <p class="sobretitulo">COMO FUNCIONA</p>
@@ -141,7 +493,7 @@
       <span>02</span>
       <div>
         <h3>Estratégia sob medida</h3>
-        <p>Defino o melhor caminho: estrutura digital, site, consultoria ou campanhas no Meta Ads.</p>
+        <p>Defino o melhor caminho: estrutura digital, site, landing page, consultoria ou campanhas no Meta Ads.</p>
       </div>
     </article>
 
@@ -152,6 +504,179 @@
         <p>Coloco o plano em prática com clareza e acompanho as próximas etapas para sua empresa evoluir.</p>
       </div>
     </article>
+  </div>
+</section>
+<section class="atuacao" id="atuacao">
+  <div class="atuacao-conteudo">
+    <div class="atuacao-texto">
+      <p class="sobretitulo">ÁREA DE ATUAÇÃO</p>
+
+      <h2>
+        Da nossa base em Alvorada para empresas em todo o
+        <span>Rio Grande do Sul.</span>
+      </h2>
+
+      <p>
+        Estratégia digital com atendimento próximo, mesmo quando o seu negócio
+        está do outro lado do estado.
+      </p>
+
+      <div class="atuacao-base">
+        <span aria-hidden="true"></span>
+        Base em Alvorada/RS
+      </div>
+    </div>
+
+    <div class="atuacao-mapa">
+      <svg
+        class="mapa-rs"
+        viewBox="0 0 620 620"
+        role="img"
+        aria-labelledby="titulo-mapa-rs descricao-mapa-rs"
+      >
+        <title id="titulo-mapa-rs">Área de atuação da Roque Ads no Rio Grande do Sul</title>
+        <desc id="descricao-mapa-rs">
+          Mapa do Rio Grande do Sul com rotas ilustrativas partindo de Alvorada
+          em direção a diferentes cidades do estado.
+        </desc>
+
+        <path
+          class="mapa-rs-forma"
+          d="M372.586,69.663L382.192,66.441L382.734,67.875L389.522,64.764L390.392,69.515L391.791,70.259L398.199,72.216L400.717,67.64L403.104,73.063L406.027,69.089L410.8,74.005L414.599,74.218L418.889,76.339L417.248,78.327L427.076,83.706L428.371,87.237L431.666,86.632L437.342,84.052L441.828,84.701L445.372,91.22L447.386,89.899L453.291,93.47L458.261,94.798L463.002,101.739L465.323,102.921L479.703,112.783L479.487,114.107L483.096,119.761L484.607,118.651L491.349,125.545L489.544,129.043L496.658,132.757L499.601,140.911L503.099,142.5L508.442,151.69L520.807,154.641L544.093,158.055L550.495,155.154L560.539,157.378L566.444,161.009L568,169.2L567.935,169.282L562.801,167.777L559.035,175.468L552.855,176.414L551.796,188.937L551.482,193.076L551.358,201.996L547.52,210.575L539.575,211.391L539.13,217.123L545.904,223.49L546.362,223.078L541.111,216.179L551.358,211.826L555.02,213.009L562.206,218.278L567.359,221.277L561.435,230.133L553.673,242.427L552.921,243.774L547.435,254.87L544.42,261.465L543.661,263.312L540.791,270.231L537.449,279.364L533.931,289.892L532.113,295.086L526.725,309.938L498.417,356.326L493.52,362.431L471.032,386.504L455.259,401.183L428.861,418.389L412.755,435.667L416.81,418.635L411.389,411.974L416.555,410.443L424.16,414.638L428.416,409.288L440.121,406.665L455.194,385.553L459.582,388.621L467.664,382.9L472.895,369.674L471.489,358.167L486.163,348.166L485.365,340L489.433,340.602L499.294,334.12L503.459,325.597L503.701,309.938L500.883,299.874L510.482,309.126L513.104,291.103L507.991,287.024L505.682,293.655L497.084,293.851L496.469,297.624L488.766,296.715L487.772,305.007L479.559,301.686L479.081,291.656L472.935,290.142L466.114,281.306L465.375,274.943L463.479,276.092L461.727,289.143L463.885,294.934L469.456,294.813L474.314,305.083L468.606,303.794L465.84,308.345L462.348,320.974L458.287,320.776L456.757,331.379L458.823,338.202L453.847,338.179L450.545,346.076L454.292,354.593L448.027,356.7L442.083,359.603L442.711,368.473L430.11,369.75L423.067,371.671L417.137,386.236L416.921,393.625L415.449,401.199L407.838,401.468L403.182,408.357L401.024,413.044L410.297,420.145L403.496,421.463L411.48,424.932L411.448,437.095L398.644,450.75L390.15,473.269L385.422,491.805L377.006,510.281L367.014,524.26L342.199,548.317L328.218,560.401L324.818,560.393L318.226,556.108L319.207,543.687L321.967,545.797L324.634,536.356L321.731,522.094L331.141,507.237L335.398,510.53L341.008,502.424L344.311,486.093L352.308,486.38L363.385,495.527L370.5,489.213L377.202,473.976L378.419,460.222L372.788,449.295L377.071,435.852L370.794,436.516L364.111,450.425L370.447,453.204L365.334,459.168L354.505,462.539L352.583,470.351L340.878,475.576L323.843,467.014L310.301,454.358L308.176,442.999L304.965,432.208L290.455,421.116L281.267,419.313L257.295,397.895L256.098,391.568L248.644,382.831L241.163,381.237L232.322,381.712L219.29,369.613L216.759,373.302L205.492,367.187L198.652,350.791L193.055,348.281L183.795,335.186L178.27,338.156L178.067,344.414L164.688,353.386L155.514,354.15L154.696,331.592L146.425,325.49L143.966,317.828L137.283,312.329L131.515,309.992L126.016,301.117L120.53,299.306L113.206,287.243L100.631,278.744L83.316,280.618L77.496,293.586L70.486,291.542L65.386,294.904L53.707,291.095L52,285.556L60.468,280.361L69.394,269.907L69.289,263.546L75.456,255.495L82.224,254.697L92.739,245.151L105.235,228.361L112.787,218.983L117.738,205.857L128.095,202.842L131.457,193.009L135.099,191.268L136.642,182.561L143.541,180.106L156.083,165.431L154.723,161.299L163.825,158.055L166.009,148.851L176.367,153.385L177.871,147.766L171.201,140.392L184.737,134.604L192.891,128.991L197.018,125.079L199.398,120.005L203.465,117.518L208.376,111.969L212.522,114.721L218.25,111.562L221.559,107.163L227.98,100.218L233.591,88.166L239.718,90.224L245.695,88.911L248.48,82.46L255.987,84.155L260.12,78.563L268.339,81.701L272.806,77.068L274.82,68.228L279.731,70.994L283.425,68.162L290.513,59.875L297.674,61.132L298.812,61.669L305.481,62.169L313.198,62.676L316.591,61.72L320.489,62.999L329.173,56.936L333.044,58.487L331.324,64.183L340.139,62.889L347.757,60.294L347.397,56.679L351.249,55.599L352.903,59.045L354.296,64.764L362.136,61.272L365.425,63.705L366.439,63.896Z"
+        ></path>
+
+        <g
+          class="mapa-conjunto"
+          data-conjunto="0"
+          data-cidades="Torres · Caxias do Sul · Passo Fundo · Santa Rosa · Santa Maria · Uruguaiana · Bagé · Pelotas · Rio Grande"
+        >
+        <g class="mapa-destino-grupo">
+          <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C525 247 548 229 566.437 221.983"></path>
+          <circle class="mapa-ponto" cx="566.437" cy="221.983" r="4.8"></circle>
+          <text class="mapa-cidade" x="555" y="211" text-anchor="end">Torres</text>
+        </g>
+
+        <g class="mapa-destino-grupo">
+          <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C494 248 486 224 471.461 209.471"></path>
+          <circle class="mapa-ponto" cx="471.461" cy="209.471" r="4.8"></circle>
+          <text class="mapa-cidade" x="460" y="198" text-anchor="end">Caxias do Sul</text>
+        </g>
+
+        <g class="mapa-destino-grupo">
+          <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C461 232 423 162 391.211 141.971"></path>
+          <circle class="mapa-ponto" cx="391.211" cy="141.971" r="4.8"></circle>
+          <text class="mapa-cidade" x="380" y="130" text-anchor="end">Passo Fundo</text>
+        </g>
+
+        <g class="mapa-destino-grupo">
+          <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C446 218 310 127 255.542 112.923"></path>
+          <circle class="mapa-ponto" cx="255.542" cy="112.923" r="4.8"></circle>
+          <text class="mapa-cidade" x="244" y="101" text-anchor="end">Santa Rosa</text>
+        </g>
+
+        <g class="mapa-destino-grupo">
+          <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C430 258 342 253 300.047 248.763"></path>
+          <circle class="mapa-ponto" cx="300.047" cy="248.763" r="4.8"></circle>
+          <text class="mapa-cidade" x="288" y="238" text-anchor="end">Santa Maria</text>
+        </g>
+
+        <g class="mapa-destino-grupo">
+          <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C423 289 161 276 85.109 253.552"></path>
+          <circle class="mapa-ponto" cx="85.109" cy="253.552" r="4.8"></circle>
+          <text class="mapa-cidade" x="97" y="243">Uruguaiana</text>
+        </g>
+
+        <g class="mapa-destino-grupo">
+          <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C442 307 330 352 280.029 373.204"></path>
+          <circle class="mapa-ponto" cx="280.029" cy="373.204" r="4.8"></circle>
+          <text class="mapa-cidade" x="267" y="367" text-anchor="end">Bagé</text>
+        </g>
+
+        <g class="mapa-destino-grupo">
+          <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C466 326 420 378 395.407 407.05"></path>
+          <circle class="mapa-ponto" cx="395.407" cy="407.05" r="4.8"></circle>
+          <text class="mapa-cidade" x="383" y="399" text-anchor="end">Pelotas</text>
+        </g>
+
+        <g class="mapa-destino-grupo">
+          <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C500 331 439 399 411.356 427.315"></path>
+          <circle class="mapa-ponto" cx="411.356" cy="427.315" r="4.8"></circle>
+          <text class="mapa-cidade" x="424" y="445">Rio Grande</text>
+        </g>
+        </g>
+
+        <g
+          class="mapa-conjunto"
+          data-conjunto="1"
+          data-cidades="Osório · Lajeado · Vacaria · Erechim · Santo Ângelo · Cruz Alta · São Borja · Santana do Livramento · Chuí"
+        >
+          <g class="mapa-destino-grupo">
+            <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C504 286 521 279 531.145 263.584"></path>
+            <circle class="mapa-ponto" cx="531.145" cy="263.584" r="4.8"></circle>
+            <text class="mapa-cidade" x="543" y="254">Osório</text>
+          </g>
+
+          <g class="mapa-destino-grupo">
+            <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C451 281 431 254 420.131 231.297"></path>
+            <circle class="mapa-ponto" cx="420.131" cy="231.297" r="4.8"></circle>
+            <text class="mapa-cidade" x="408" y="247" text-anchor="end">Lajeado</text>
+          </g>
+
+          <g class="mapa-destino-grupo">
+            <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C512 240 524 186 487 160.19"></path>
+            <circle class="mapa-ponto" cx="487" cy="160.19" r="4.8"></circle>
+            <text class="mapa-cidade" x="499" y="151">Vacaria</text>
+          </g>
+
+          <g class="mapa-destino-grupo">
+            <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C470 213 435 116 400.167 95.603"></path>
+            <circle class="mapa-ponto" cx="400.167" cy="95.603" r="4.8"></circle>
+            <text class="mapa-cidade" x="389" y="84" text-anchor="end">Erechim</text>
+          </g>
+
+          <g class="mapa-destino-grupo">
+            <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C432 196 334 124 269.575 144.742"></path>
+            <circle class="mapa-ponto" cx="269.575" cy="144.742" r="4.8"></circle>
+            <text class="mapa-cidade" x="258" y="134" text-anchor="end">Santo Ângelo</text>
+          </g>
+
+          <g class="mapa-destino-grupo">
+            <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C417 256 360 220 312.864 170.399"></path>
+            <circle class="mapa-ponto" cx="312.864" cy="170.399" r="4.8"></circle>
+            <text class="mapa-cidade" x="300" y="192" text-anchor="end">Cruz Alta</text>
+          </g>
+
+          <g class="mapa-destino-grupo">
+            <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C390 181 238 145 156.004 171.353"></path>
+            <circle class="mapa-ponto" cx="156.004" cy="171.353" r="4.8"></circle>
+            <text class="mapa-cidade" x="144" y="161" text-anchor="end">São Borja</text>
+          </g>
+
+          <g class="mapa-destino-grupo">
+            <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C388 325 263 362 186.372 338.568"></path>
+            <circle class="mapa-ponto" cx="186.372" cy="338.568" r="4.8"></circle>
+            <text class="mapa-cidade" x="174" y="329" text-anchor="end">Santana do Livramento</text>
+          </g>
+
+          <g class="mapa-destino-grupo">
+            <path class="mapa-rota mapa-caminho-animado" d="M477.745 271.063 C456 381 365 522 322.372 555.896"></path>
+            <circle class="mapa-ponto" cx="322.372" cy="555.896" r="4.8"></circle>
+            <text class="mapa-cidade" x="310" y="576" text-anchor="end">Chuí</text>
+          </g>
+        </g>
+
+        <circle class="mapa-origem-halo" cx="477.745" cy="271.063" r="17"></circle>
+        <circle class="mapa-origem" cx="477.745" cy="271.063" r="7"></circle>
+        <path class="mapa-linha-label" d="M486 279 L500 300"></path>
+        <text class="mapa-label-origem" x="505" y="306">Alvorada</text>
+        <text class="mapa-label-base" x="505" y="324">base da Roque Ads</text>
+      </svg>
+
+      <div class="atuacao-cidades" aria-label="Exemplos de cidades atendidas">
+        Torres · Caxias do Sul · Passo Fundo · Santa Rosa · Santa Maria ·
+        Uruguaiana · Bagé · Pelotas · Rio Grande
+      </div>
+    </div>
   </div>
 </section>
 <section class="sobre" id="sobre">
@@ -219,7 +744,8 @@
         <option value="" selected disabled>Selecione uma opção</option>
         <option value="Gestão de Tráfego Pago">Gestão de Tráfego Pago</option>
         <option value="Consultoria Digital">Consultoria Digital</option>
-<option value="Criação de Sites ou Landing Page">Criação de Sites ou Landing Page</option>
+        <option value="Criação de Site Institucional">Criação de Site Institucional</option>
+        <option value="Criação de Landing Page">Criação de Landing Page</option>
         <option value="Estrutura Digital da Empresa">Estrutura Digital da Empresa</option>
       </select>
     </div>
@@ -331,6 +857,384 @@
       behavior: "auto"
     });
   });
+
+  const detalhesServicos = {
+    trafego: {
+      titulo: "Gestão de Tráfego Pago",
+      resumo: "É o planejamento, a criação e o acompanhamento de campanhas no Meta Ads para apresentar sua empresa às pessoas certas e transformar investimento em novas oportunidades.",
+      ideal: "Empresas que querem gerar conversas, leads ou vendas com anúncios mais organizados e estratégicos.",
+      opcao: "Gestão de Tráfego Pago"
+    },
+    consultoria: {
+      titulo: "Consultoria Digital",
+      resumo: "É uma análise estratégica da presença digital da empresa para identificar gargalos, encontrar oportunidades e definir com clareza os próximos passos.",
+      ideal: "Negócios que já estão no digital, mas precisam de clareza para corrigir a rota e tomar decisões melhores.",
+      opcao: "Consultoria Digital"
+    },
+    sites: {
+      titulo: "Sites e Landing Pages",
+      resumo: "Criação de estruturas digitais profissionais para apresentar a empresa por completo ou transformar uma oferta específica em oportunidades.",
+      ideal: "Empresas que precisam fortalecer sua presença digital ou criar uma página focada em campanhas.",
+      opcao: "Criação de Site Institucional"
+    },
+    estrutura: {
+      titulo: "Estrutura Digital da Empresa",
+      resumo: "É a criação e organização dos principais canais digitais para que a empresa seja encontrada, transmita profissionalismo e tenha uma presença integrada.",
+      ideal: "Empresas que estão começando no digital ou possuem canais desconectados, incompletos ou com aparência pouco profissional.",
+      opcao: "Estrutura Digital da Empresa"
+    }
+  };
+
+  const detalhesTiposSite = {
+    site: {
+      opcao: "Criação de Site Institucional",
+      cta: "Quero um site institucional",
+      descricao: "modal-site-resumo-site modal-site-ideal-site"
+    },
+    landing: {
+      opcao: "Criação de Landing Page",
+      cta: "Quero uma landing page",
+      descricao: "modal-site-resumo-landing modal-site-ideal-landing"
+    }
+  };
+
+  const modalServico = document.querySelector("#modal-servico");
+  const cardsServico = document.querySelectorAll(".card-servico");
+
+  if (modalServico && cardsServico.length) {
+    const painelModal = modalServico.querySelector(".modal-servico-painel");
+    const tituloModal = modalServico.querySelector("#modal-servico-titulo");
+    const resumoModal = modalServico.querySelector("#modal-servico-resumo");
+    const idealModal = modalServico.querySelector("#modal-servico-ideal");
+    const imagemModal = modalServico.querySelector(".modal-servico-imagem");
+    const gridModal = modalServico.querySelector(".modal-servico-grid");
+    const modalSites = modalServico.querySelector(".modal-sites");
+    const abasSiteModal = Array.from(modalServico.querySelectorAll("[data-modal-site-tipo]"));
+    const paineisSiteModal = Array.from(modalServico.querySelectorAll("[data-modal-site-painel]"));
+    const ctaModal = modalServico.querySelector(".modal-servico-cta");
+    const fecharModalBotao = modalServico.querySelector(".modal-servico-fechar");
+    let ultimoFoco = null;
+    let dadosAtivos = null;
+    let timerFechamento = null;
+
+    const fecharModal = (devolverFoco = true) => {
+      if (modalServico.hidden) return;
+
+      modalServico.classList.remove("aberto");
+      modalServico.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("modal-aberto");
+
+      window.clearTimeout(timerFechamento);
+      timerFechamento = window.setTimeout(() => {
+        modalServico.hidden = true;
+      }, 260);
+
+      if (devolverFoco && ultimoFoco) {
+        ultimoFoco.focus();
+      }
+    };
+
+    const inserirIlustracaoModal = (ilustracao) => {
+      imagemModal.replaceChildren();
+      if (!ilustracao) return;
+
+      const copiaIlustracao = ilustracao.cloneNode(true);
+      copiaIlustracao.querySelectorAll("[id]").forEach((elemento) => elemento.removeAttribute("id"));
+      copiaIlustracao.querySelectorAll("[aria-labelledby]").forEach((elemento) => elemento.removeAttribute("aria-labelledby"));
+      copiaIlustracao.querySelectorAll("svg").forEach((elemento) => elemento.setAttribute("aria-hidden", "true"));
+      imagemModal.appendChild(copiaIlustracao);
+    };
+
+    const atualizarModalSite = (tipo, moverFoco = false) => {
+      const configuracao = detalhesTiposSite[tipo] || detalhesTiposSite.site;
+
+      dadosAtivos = {
+        ...detalhesServicos.sites,
+        opcao: configuracao.opcao
+      };
+
+      abasSiteModal.forEach((aba) => {
+        const ativa = aba.dataset.modalSiteTipo === tipo;
+        aba.classList.toggle("ativo", ativa);
+        aba.setAttribute("aria-selected", String(ativa));
+        aba.tabIndex = ativa ? 0 : -1;
+
+        if (ativa && moverFoco) {
+          aba.focus();
+        }
+      });
+
+      paineisSiteModal.forEach((painel) => {
+        painel.hidden = painel.dataset.modalSitePainel !== tipo;
+      });
+
+      const preview = document.querySelector(
+        `.comparacao-web-card[data-comparacao-tipo="${tipo}"] .comparacao-preview`
+      );
+
+      inserirIlustracaoModal(preview);
+      painelModal.setAttribute("aria-describedby", configuracao.descricao);
+      ctaModal.textContent = configuracao.cta;
+    };
+
+    const abrirModal = (card) => {
+      const dados = detalhesServicos[card.dataset.servico];
+      if (!dados) return;
+
+      ultimoFoco = card;
+      dadosAtivos = dados;
+      tituloModal.textContent = dados.titulo;
+      resumoModal.textContent = dados.resumo;
+      idealModal.textContent = dados.ideal;
+
+      const ehModalDeSites = card.dataset.servico === "sites" && modalSites && gridModal;
+
+      if (ehModalDeSites) {
+        gridModal.hidden = true;
+        modalSites.hidden = false;
+        atualizarModalSite("site");
+      } else {
+        gridModal.hidden = false;
+        modalSites.hidden = true;
+        painelModal.setAttribute("aria-describedby", "modal-servico-resumo modal-servico-ideal");
+        ctaModal.textContent = "Solicitar diagnóstico";
+        inserirIlustracaoModal(card.querySelector(".card-ilustracao"));
+      }
+
+      window.clearTimeout(timerFechamento);
+      modalServico.hidden = false;
+      modalServico.setAttribute("aria-hidden", "false");
+      document.body.classList.add("modal-aberto");
+
+      window.requestAnimationFrame(() => {
+        modalServico.classList.add("aberto");
+        fecharModalBotao.focus();
+      });
+    };
+
+    cardsServico.forEach((card) => {
+      card.addEventListener("click", () => abrirModal(card));
+      card.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter" && event.key !== " ") return;
+        event.preventDefault();
+        abrirModal(card);
+      });
+    });
+
+    abasSiteModal.forEach((aba, indice) => {
+      aba.addEventListener("click", () => atualizarModalSite(aba.dataset.modalSiteTipo));
+      aba.addEventListener("keydown", (event) => {
+        if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+
+        event.preventDefault();
+        let proximoIndice = indice;
+
+        if (event.key === "ArrowRight") proximoIndice = (indice + 1) % abasSiteModal.length;
+        if (event.key === "ArrowLeft") proximoIndice = (indice - 1 + abasSiteModal.length) % abasSiteModal.length;
+        if (event.key === "Home") proximoIndice = 0;
+        if (event.key === "End") proximoIndice = abasSiteModal.length - 1;
+
+        atualizarModalSite(abasSiteModal[proximoIndice].dataset.modalSiteTipo, true);
+      });
+    });
+
+    modalServico.querySelectorAll("[data-fechar-modal]").forEach((controle) => {
+      controle.addEventListener("click", () => fecharModal());
+    });
+
+    ctaModal.addEventListener("click", () => {
+      const seletorServico = document.querySelector("#servico");
+
+      if (seletorServico && dadosAtivos) {
+        seletorServico.value = dadosAtivos.opcao;
+      }
+
+      fecharModal(false);
+    });
+
+    modalServico.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        fecharModal();
+        return;
+      }
+
+      if (event.key !== "Tab") return;
+
+      const focaveis = Array.from(
+        painelModal.querySelectorAll('button, a[href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+      ).filter((item) => !item.hasAttribute("disabled"));
+
+      if (!focaveis.length) return;
+
+      const primeiro = focaveis[0];
+      const ultimo = focaveis[focaveis.length - 1];
+
+      if (event.shiftKey && document.activeElement === primeiro) {
+        event.preventDefault();
+        ultimo.focus();
+      } else if (!event.shiftKey && document.activeElement === ultimo) {
+        event.preventDefault();
+        primeiro.focus();
+      }
+    });
+  }
+
+  const abasComparacao = Array.from(document.querySelectorAll("[data-comparacao-tipo]"));
+  const paineisComparacao = Array.from(document.querySelectorAll("[data-comparacao-painel]"));
+
+  if (abasComparacao.length && paineisComparacao.length) {
+    const ativarComparacao = (tipo, moverFoco = false) => {
+      abasComparacao.forEach((aba) => {
+        const ativa = aba.dataset.comparacaoTipo === tipo;
+        aba.classList.toggle("ativo", ativa);
+        aba.setAttribute("aria-selected", String(ativa));
+        aba.tabIndex = ativa ? 0 : -1;
+
+        if (ativa && moverFoco) {
+          aba.focus();
+        }
+      });
+
+      paineisComparacao.forEach((painel) => {
+        painel.hidden = painel.dataset.comparacaoPainel !== tipo;
+      });
+    };
+
+    abasComparacao.forEach((aba, indice) => {
+      aba.addEventListener("click", () => ativarComparacao(aba.dataset.comparacaoTipo));
+      aba.addEventListener("keydown", (event) => {
+        if (!["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End"].includes(event.key)) return;
+
+        event.preventDefault();
+        let proximoIndice = indice;
+
+        if (["ArrowRight", "ArrowDown"].includes(event.key)) {
+          proximoIndice = (indice + 1) % abasComparacao.length;
+        }
+
+        if (["ArrowLeft", "ArrowUp"].includes(event.key)) {
+          proximoIndice = (indice - 1 + abasComparacao.length) % abasComparacao.length;
+        }
+
+        if (event.key === "Home") proximoIndice = 0;
+        if (event.key === "End") proximoIndice = abasComparacao.length - 1;
+
+        ativarComparacao(abasComparacao[proximoIndice].dataset.comparacaoTipo, true);
+      });
+    });
+  }
+
+  document.querySelectorAll("[data-selecionar-servico]").forEach((controle) => {
+    controle.addEventListener("click", () => {
+      const seletorServico = document.querySelector("#servico");
+      if (!seletorServico) return;
+
+      seletorServico.value = controle.dataset.selecionarServico;
+    });
+  });
+
+  const secaoAtuacao = document.querySelector(".atuacao");
+
+  if (secaoAtuacao) {
+    const conjuntosMapa = Array.from(secaoAtuacao.querySelectorAll(".mapa-conjunto"));
+    const listaCidades = secaoAtuacao.querySelector(".atuacao-cidades");
+    const movimentoReduzido = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let conjuntoAtual = 0;
+    let timerMapa = null;
+    let mapaVisivel = false;
+
+    conjuntosMapa.forEach((conjunto) => {
+      const destinos = conjunto.querySelectorAll(".mapa-destino-grupo");
+
+      destinos.forEach((grupo, indice) => {
+        const rota = grupo.querySelector(".mapa-rota");
+        if (!rota) return;
+
+        const comprimento = rota.getTotalLength();
+        rota.style.setProperty("--comprimento", String(comprimento));
+
+        let fluxo = grupo.querySelector(".mapa-fluxo");
+
+        if (!fluxo) {
+          fluxo = rota.cloneNode();
+          fluxo.setAttribute("class", "mapa-fluxo");
+          fluxo.setAttribute("aria-hidden", "true");
+          rota.parentNode.insertBefore(fluxo, rota.nextSibling);
+        }
+
+        fluxo.style.setProperty("--intervalo-fluxo", String(Math.max(comprimento - 3, 1)));
+        fluxo.style.setProperty("--fim-fluxo", String(-comprimento));
+
+        grupo.style.setProperty("--ordem", String(indice));
+        grupo.style.setProperty("--ordem-saida", String(destinos.length - indice - 1));
+        grupo.style.setProperty("--atraso-rota", String(0.55 + indice * 0.14) + "s");
+        grupo.style.setProperty("--atraso-ponto", String(1.86 + indice * 0.14) + "s");
+        grupo.style.setProperty("--atraso-label", String(1.92 + indice * 0.14) + "s");
+        grupo.style.setProperty("--atraso-fluxo", String(2.08 + indice * 0.14) + "s");
+        grupo.style.setProperty("--atraso-saida", String((destinos.length - indice - 1) * 0.04) + "s");
+        grupo.style.setProperty("--atraso-saida-ponto", String((destinos.length - indice - 1) * 0.03) + "s");
+      });
+    });
+
+    secaoAtuacao.classList.add("tem-animacao", "mapa-pronto");
+
+    const limparCicloMapa = () => {
+      window.clearTimeout(timerMapa);
+      timerMapa = null;
+    };
+
+    const mostrarConjunto = () => {
+      if (!mapaVisivel || !conjuntosMapa.length) return;
+
+      const conjunto = conjuntosMapa[conjuntoAtual];
+      conjunto.classList.remove("saindo");
+      void conjunto.getBoundingClientRect();
+      conjunto.classList.add("ativo");
+
+      if (listaCidades) {
+        listaCidades.textContent = conjunto.dataset.cidades;
+      }
+
+      if (movimentoReduzido.matches) return;
+
+      timerMapa = window.setTimeout(() => {
+        conjunto.classList.add("saindo");
+
+        timerMapa = window.setTimeout(() => {
+          conjunto.classList.remove("ativo", "saindo");
+          conjuntoAtual = (conjuntoAtual + 1) % conjuntosMapa.length;
+          mostrarConjunto();
+        }, 1050);
+      }, 6300);
+    };
+
+    const iniciarCicloMapa = () => {
+      limparCicloMapa();
+      conjuntosMapa.forEach((conjunto) => conjunto.classList.remove("ativo", "saindo"));
+      secaoAtuacao.classList.add("animar");
+      mostrarConjunto();
+    };
+
+    if ("IntersectionObserver" in window) {
+      const observadorMapa = new IntersectionObserver((entradas) => {
+        const entrada = entradas.find((item) => item.target === secaoAtuacao);
+        if (!entrada) return;
+
+        mapaVisivel = entrada.isIntersecting;
+
+        if (mapaVisivel) {
+          iniciarCicloMapa();
+        } else {
+          limparCicloMapa();
+        }
+      }, { threshold: 0.2 });
+
+      observadorMapa.observe(secaoAtuacao);
+    } else {
+      mapaVisivel = true;
+      iniciarCicloMapa();
+    }
+  }
 </script>
   <script>
   const formularioDiagnostico = document.querySelector("#formulario-diagnostico");
