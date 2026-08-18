@@ -761,6 +761,56 @@
   </form>
 </section>
   <section class="contato" id="contato">
+  <div class="contato-conteudo">
+    <div class="contato-intro">
+      <p class="sobretitulo">VAMOS CONVERSAR?</p>
+
+      <h2>O próximo passo da sua empresa começa com uma conversa.</h2>
+
+      <p>
+        Conte um pouco sobre o seu negócio. Vamos entender o momento atual e
+        encontrar a solução digital que realmente faz sentido para você.
+      </p>
+    </div>
+
+    <div class="contato-painel">
+      <div class="contato-painel-topo">
+        <span class="contato-status"></span>
+        Atendimento online
+      </div>
+
+      <h3>Fale diretamente com a Roque Ads.</h3>
+
+      <p>
+        Pelo WhatsApp, você explica seu objetivo e recebe um direcionamento
+        inicial para a sua empresa.
+      </p>
+
+      <a
+        class="botao botao-whatsapp"
+        href="https://wa.me/5551992755891?text=Olá%2C%20Andrey!%20Vim%20pelo%20site%20da%20Roque%20Ads%20e%20quero%20entender%20qual%20solução%20digital%20faz%20mais%20sentido%20para%20o%20meu%20negócio."
+        target="_blank"
+        rel="noopener"
+      >
+        Falar no WhatsApp <span aria-hidden="true">↗</span>
+      </a>
+
+      <div class="contato-canais">
+        <a href="mailto:contato@roqueads.com.br">
+          <span>Atendimento</span>
+          contato@roqueads.com.br
+        </a>
+
+        <a href="mailto:financeiro@roqueads.com.br">
+          <span>Financeiro</span>
+          financeiro@roqueads.com.br
+        </a>
+      </div>
+
+      <p class="contato-base">Base em Alvorada/RS · Atendimento em todo o estado</p>
+    </div>
+  </div>
+</section>
   <p class="sobretitulo">VAMOS CONVERSAR?</p>
 
   <h2>Pronto para dar o próximo passo no digital?</h2>
@@ -832,7 +882,29 @@
         top: 0,
         behavior: "smooth"
       });
-   } else if (window.matchMedia("(min-width: 861px)").matches) {
+   } else if (
+  idDestino === "atuacao" &&
+  window.matchMedia("(min-width: 861px)").matches
+) {
+  const deslocamento = Math.max(
+    0,
+    (destino.offsetHeight - window.innerHeight) / 2
+  );
+
+  window.scrollTo({
+    top: Math.round(
+      window.scrollY +
+      destino.getBoundingClientRect().top +
+      deslocamento
+    ),
+    behavior: "smooth"
+  });
+} else {
+  destino.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}
   window.scrollTo({
     top: Math.round(window.scrollY + destino.getBoundingClientRect().top),
     behavior: "smooth"
