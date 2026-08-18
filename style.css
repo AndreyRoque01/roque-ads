@@ -2630,3 +2630,29 @@ h3,
     transition: none;
   }
 }
+/* Enquadramento das seções ao navegar pelo menu */
+@media (min-width: 861px) {
+  .sobre,
+  .processo,
+  .contato {
+    box-sizing: border-box;
+    min-height: 100vh;
+  }
+
+  .sobre {
+    align-content: center;
+  }
+
+  .processo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contato {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
