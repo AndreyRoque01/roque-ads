@@ -878,25 +878,8 @@
     event.preventDefault();
 
     if (idDestino === "topo" || !idDestino) {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-   } else if (
-  idDestino === "atuacao" &&
-  window.matchMedia("(min-width: 861px)").matches
-) {
-  const deslocamento = Math.max(
-    0,
-    (destino.offsetHeight - window.innerHeight) / 2
-  );
-
   window.scrollTo({
-    top: Math.round(
-      window.scrollY +
-      destino.getBoundingClientRect().top +
-      deslocamento
-    ),
+    top: 0,
     behavior: "smooth"
   });
 } else {
@@ -905,17 +888,6 @@
     block: "start"
   });
 }
-  window.scrollTo({
-    top: Math.round(window.scrollY + destino.getBoundingClientRect().top),
-    behavior: "smooth"
-  });
-} else {
-  destino.scrollIntoView({
-    behavior: "smooth",
-    block: "start"
-  });
-}
-
     limparAncoraDaUrl();
   });
 
