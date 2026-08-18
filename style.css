@@ -1967,8 +1967,9 @@ h3,
 
 .contato-emails a:hover {
   color: #ffffff;
-}#sobre {
-  scroll-margin-top: 70px;
+#sobre {
+  scroll-margin-top: 0;
+}
 }/* Seção de diagnóstico */
 .diagnostico {
   background-color: #ffffff;
@@ -2087,7 +2088,7 @@ h3,
 
 /* Área de atuação */
 #atuacao {
-  scroll-margin-top: 40px;
+  scroll-margin-top: 0;
 }
 
 .atuacao {
