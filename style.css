@@ -1354,7 +1354,7 @@ h3,
   font-family: "Sora", Arial, sans-serif;
 }
 
-}.problema {
+.problema {
   background-color: #111827;
   color: #ffffff;
   padding: 105px 24px;
@@ -1425,6 +1425,7 @@ h3,
   .problemas-lista h3 {
     font-size: 19px;
   }
+}
 
 /* Menu discreto que aparece depois da abertura */
 .menu-lateral {
@@ -1709,6 +1710,8 @@ h3,
 
 .logo-nova .logo-ads {
   color: #1677ff;
+}
+
 .rodape-logo {
   align-items: center;
   display: inline-flex;
@@ -1785,6 +1788,8 @@ h3,
   font-size: 54px;
   font-weight: 800;
   letter-spacing: -4px;
+}
+
 .diagnostico {
   background-color: #ffffff;
   padding: 110px 24px;
