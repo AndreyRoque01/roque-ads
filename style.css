@@ -2819,20 +2819,12 @@ h3,
   }
 }
 /* ===== AJUSTE PARA DESKTOPS GRANDES ===== */
-@media (min-width: 1400px) and (min-height: 800px) {
+@media (min-width: 1400px) {
 
-  .processo {
-    min-height: 100vh;
-    box-sizing: border-box;
-  }
-
-}
-/* ===== AJUSTE PARA DESKTOPS GRANDES ===== */
-@media (min-width: 1400px) and (min-height: 800px) {
-
-  .processo {
-    min-height: 100vh;
-    box-sizing: border-box;
-  }
+    .processo {
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
 
 }
+
