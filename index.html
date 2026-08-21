@@ -1310,5 +1310,50 @@ Objetivo: ${objetivo}`;
     </p>
   </div>
 </footer>
+  <script>
+(() => {
+  const processo = document.querySelector(".processo");
+
+  if (!processo || !("IntersectionObserver" in window)) {
+    return;
+  }
+
+  const intro = processo.querySelector(".processo-intro");
+  const passos = [...processo.querySelectorAll(".passo")];
+
+  processo.classList.add("processo-animavel");
+
+  /* Pequeno atraso progressivo entre 01, 02 e 03 */
+  passos.forEach((passo, index) => {
+    passo.style.setProperty(
+      "--passo-delay",
+      `${index * 160}ms`
+    );
+  });
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        entry.target.classList.add("visivel");
+        obs.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.2,
+      rootMargin: "0px 0px -8% 0px"
+    }
+  );
+
+  if (intro) {
+    observer.observe(intro);
+  }
+
+  passos.forEach((passo) => {
+    observer.observe(passo);
+  });
+})();
+</script>
 </body>
 </html>
