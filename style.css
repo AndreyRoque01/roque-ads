@@ -2840,12 +2840,15 @@ h3,
     box-sizing: border-box;
   }
 
-  /* CENTRALIZAÇÃO VERTICAL */
-  .processo,
-  .sobre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+ /* CENTRALIZAÇÃO VERTICAL */
+.processo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sobre {
+  align-content: center;
+}
 
 }
