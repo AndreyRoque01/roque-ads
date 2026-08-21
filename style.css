@@ -3868,3 +3868,180 @@ h3,
   }
 
 }
+/* =========================================================
+   ANIMAÇÃO — COMO FUNCIONA
+   ========================================================= */
+
+/* Só muda o visual inicial se o JavaScript estiver funcionando */
+.processo.processo-animavel .processo-intro > * {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Título entrando em sequência */
+.processo.processo-animavel .processo-intro.visivel > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.processo.processo-animavel .processo-intro.visivel > *:nth-child(1) {
+  transition-delay: 0.05s;
+}
+
+.processo.processo-animavel .processo-intro.visivel > *:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+.processo.processo-animavel .processo-intro.visivel > *:nth-child(3) {
+  transition-delay: 0.25s;
+}
+
+
+/* ---------- PASSOS ---------- */
+
+.processo.processo-animavel .passo {
+  position: relative;
+
+  opacity: 0;
+  transform: translateY(30px);
+
+  /* Esconde a linha original somente durante a versão animada */
+  border-top-color: transparent;
+
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  transition-delay: var(--passo-delay, 0ms);
+}
+
+
+/* Linha azul animada */
+.processo.processo-animavel .passo::before {
+  content: "";
+
+  position: absolute;
+  top: -3px;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    #2563eb 0%,
+    #4f83ff 55%,
+    #7aa2ff 100%
+  );
+
+  border-radius: 999px;
+
+  transform: scaleX(0);
+  transform-origin: left center;
+
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.18);
+
+  transition:
+    transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: calc(var(--passo-delay, 0ms) + 120ms);
+}
+
+
+/* Quando o passo aparece */
+.processo.processo-animavel .passo.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.processo.processo-animavel .passo.visivel::before {
+  transform: scaleX(1);
+}
+
+
+/* ---------- NÚMEROS 01 / 02 / 03 ---------- */
+
+.processo .passo span {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.processo.processo-animavel .passo.visivel span {
+  animation: passo-numero-pulso 1.15s ease-out 1;
+  animation-delay: calc(var(--passo-delay, 0ms) + 300ms);
+}
+
+@keyframes passo-numero-pulso {
+
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.28);
+  }
+
+  45% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 10px rgba(37, 99, 235, 0.08);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+  }
+
+}
+
+
+/* ---------- HOVER — SOMENTE PC ---------- */
+
+@media (hover: hover) and (pointer: fine) {
+
+  .processo .passo {
+    border-radius: 16px;
+  }
+
+  .processo .passo:hover {
+    background: rgba(37, 99, 235, 0.035);
+
+    box-shadow:
+      0 16px 40px rgba(15, 23, 42, 0.07);
+
+    transform: translateY(-7px);
+  }
+
+  .processo .passo:hover span {
+    transform: scale(1.1);
+
+    box-shadow:
+      0 0 0 8px rgba(37, 99, 235, 0.08),
+      0 8px 20px rgba(37, 99, 235, 0.14);
+  }
+
+  .processo .passo:hover::before {
+    box-shadow:
+      0 0 14px rgba(37, 99, 235, 0.28);
+  }
+
+}
+
+
+/* ---------- ACESSIBILIDADE ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .processo.processo-animavel .processo-intro > *,
+  .processo.processo-animavel .passo,
+  .processo.processo-animavel .passo::before {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    animation: none;
+  }
+
+}
