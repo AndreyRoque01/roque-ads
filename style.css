@@ -3122,3 +3122,541 @@ h3,
   }
 
 }
+/* =========================================================
+   RESPONSIVIDADE FINAL — CELULARES
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  /* ---------- GERAL ---------- */
+
+  body {
+    font-size: 15px;
+  }
+
+  .sobretitulo {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+
+  /* ---------- CABEÇALHO ---------- */
+
+  .cabecalho {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .logo-nova {
+    font-size: 20px;
+  }
+
+
+  /* ---------- INÍCIO ---------- */
+
+  .hero {
+    min-height: auto;
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .hero h1 {
+    font-size: clamp(38px, 10vw, 46px);
+    line-height: 1.02;
+  }
+
+  .descricao {
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 360px;
+  }
+
+  .botao {
+    font-size: 14px;
+    padding: 15px 22px;
+  }
+
+
+  /* ---------- PRESENÇA DIGITAL ---------- */
+
+  .problema {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .problema-intro h2 {
+    font-size: 32px;
+    line-height: 1.08;
+  }
+
+  .problema-intro > p:not(.sobretitulo) {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .problemas-lista h3 {
+    font-size: 17px;
+    line-height: 1.2;
+  }
+
+
+  /* ---------- SERVIÇOS ---------- */
+
+  .servicos {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .servicos h2 {
+    font-size: 31px;
+    line-height: 1.08;
+  }
+
+  .cards {
+    gap: 18px;
+  }
+
+  .card {
+    min-height: auto;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+
+  /* ---------- SITE x LANDING PAGE ---------- */
+
+  .comparacao-web {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .comparacao-web-cabecalho h2 {
+    font-size: 31px;
+    line-height: 1.08;
+  }
+
+  .comparacao-web-cabecalho > p:not(.sobretitulo) {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+
+  /* ---------- COMO FUNCIONA ---------- */
+
+  .processo {
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .processo-intro {
+    margin-bottom: 48px;
+  }
+
+  .processo-intro h2 {
+    font-size: 31px;
+    line-height: 1.08;
+  }
+
+  .processo-intro > p:last-child {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .passos {
+    gap: 0;
+  }
+
+  .passo {
+    padding-top: 24px;
+    padding-bottom: 28px;
+  }
+
+  .passo h3 {
+    font-size: 19px;
+  }
+
+  .passo p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+
+  /* ---------- ATUAÇÃO ---------- */
+
+  .atuacao {
+    min-height: auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .atuacao-conteudo {
+    gap: 42px;
+  }
+
+  .atuacao h2 {
+    font-size: 34px;
+    line-height: 1.02;
+  }
+
+  .atuacao-texto > p:not(.sobretitulo) {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+
+  /* ---------- SOBRE ---------- */
+
+  .sobre {
+    min-height: auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    gap: 38px;
+  }
+
+  .sobre h2 {
+    font-size: 32px;
+    line-height: 1.08;
+  }
+
+  .sobre-texto > p:not(.sobretitulo) {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .sobre-destaque {
+    min-height: 260px;
+    padding: 28px;
+  }
+
+  .sobre-destaque strong {
+    font-size: 27px;
+    line-height: 1.1;
+  }
+
+
+  /* ---------- DIAGNÓSTICO ---------- */
+
+  .diagnostico {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .diagnostico-intro h2 {
+    font-size: 31px;
+    line-height: 1.08;
+  }
+
+  .diagnostico-intro > p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .formulario-diagnostico {
+    padding: 20px;
+    gap: 18px;
+  }
+
+  .campo label {
+    font-size: 12px;
+  }
+
+  .campo input,
+  .campo select,
+  .campo textarea {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+
+  /* ---------- CONTATO ---------- */
+
+  .contato {
+    min-height: auto;
+  }
+
+  .contato-conteudo {
+    gap: 38px;
+  }
+
+  .contato-intro h2 {
+    font-size: 39px;
+    line-height: 0.98;
+  }
+
+  .contato-intro > p:last-child {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .contato-painel {
+    padding: 24px 18px;
+  }
+
+  .contato-painel h3 {
+    font-size: 25px;
+    line-height: 1.05;
+  }
+
+  .contato-painel > p {
+    font-size: 14px;
+  }
+
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE FINAL — TABLETS
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* ---------- GERAL ---------- */
+
+  body {
+    font-size: 16px;
+  }
+
+  .sobretitulo {
+    font-size: 12px;
+  }
+
+
+  /* ---------- CABEÇALHO ---------- */
+
+  .cabecalho {
+    padding: 22px 28px;
+  }
+
+  .logo-nova {
+    font-size: 22px;
+  }
+
+  .menu {
+    gap: 18px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+
+
+  /* ---------- INÍCIO ---------- */
+
+  .hero {
+    min-height: calc(100vh - 80px);
+    padding: 80px 32px;
+  }
+
+  .hero h1 {
+    font-size: clamp(50px, 7vw, 64px);
+    line-height: 1.02;
+  }
+
+  .descricao {
+    max-width: 620px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .botao {
+    font-size: 16px;
+    padding: 16px 26px;
+  }
+
+
+  /* ---------- PRESENÇA DIGITAL ---------- */
+
+  .problema {
+    padding: 90px 32px;
+  }
+
+  .problema-intro h2 {
+    font-size: 40px;
+  }
+
+  .problema-intro > p:not(.sobretitulo) {
+    font-size: 17px;
+  }
+
+  .problemas-lista h3 {
+    font-size: 21px;
+  }
+
+
+  /* ---------- SERVIÇOS ---------- */
+
+  .servicos {
+    padding: 90px 32px;
+  }
+
+  .servicos h2 {
+    font-size: 40px;
+  }
+
+  .cards {
+    gap: 20px;
+  }
+
+  .card h3 {
+    font-size: 21px;
+  }
+
+  .card p {
+    font-size: 15px;
+  }
+
+
+  /* ---------- SITE x LANDING PAGE ---------- */
+
+  .comparacao-web {
+    padding: 90px 32px;
+  }
+
+  .comparacao-web-cabecalho h2 {
+    font-size: 40px;
+  }
+
+  .comparacao-web-cabecalho > p:not(.sobretitulo) {
+    font-size: 17px;
+  }
+
+
+  /* ---------- COMO FUNCIONA ---------- */
+
+  .processo {
+    min-height: 100vh;
+    padding: 90px 32px;
+    box-sizing: border-box;
+  }
+
+  .processo-intro {
+    margin-bottom: 60px;
+  }
+
+  .processo-intro h2 {
+    font-size: 40px;
+  }
+
+  .processo-intro > p:last-child {
+    font-size: 17px;
+  }
+
+  .passos {
+    gap: 24px;
+  }
+
+  .passo h3 {
+    font-size: 21px;
+  }
+
+  .passo p {
+    font-size: 15px;
+  }
+
+
+  /* ---------- ATUAÇÃO ---------- */
+
+  .atuacao {
+    min-height: 100vh;
+    padding: 90px 32px;
+    box-sizing: border-box;
+  }
+
+  .atuacao-conteudo {
+    gap: 50px;
+  }
+
+  .atuacao h2 {
+    font-size: 48px;
+    line-height: 1.03;
+  }
+
+  .atuacao-texto > p:not(.sobretitulo) {
+    font-size: 17px;
+  }
+
+
+  /* ---------- SOBRE ---------- */
+
+  .sobre {
+    min-height: 100vh;
+    padding: 90px 32px;
+    box-sizing: border-box;
+    gap: 50px;
+    align-content: center;
+  }
+
+  .sobre h2 {
+    font-size: 40px;
+  }
+
+  .sobre-texto > p:not(.sobretitulo) {
+    font-size: 16px;
+  }
+
+  .sobre-destaque {
+    min-height: 300px;
+    padding: 34px;
+  }
+
+  .sobre-destaque strong {
+    font-size: 30px;
+  }
+
+
+  /* ---------- DIAGNÓSTICO ---------- */
+
+  .diagnostico {
+    padding: 90px 32px;
+  }
+
+  .diagnostico-intro h2 {
+    font-size: 40px;
+  }
+
+  .diagnostico-intro > p {
+    font-size: 17px;
+  }
+
+  .formulario-diagnostico {
+    padding: 34px;
+    gap: 20px;
+  }
+
+
+  /* ---------- CONTATO ---------- */
+
+  .contato {
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+
+  .contato-conteudo {
+    gap: 55px;
+  }
+
+  .contato-intro h2 {
+    font-size: 50px;
+  }
+
+  .contato-intro > p:last-child {
+    font-size: 17px;
+  }
+
+  .contato-painel {
+    padding: 34px;
+  }
+
+  .contato-painel h3 {
+    font-size: 29px;
+  }
+
+}
