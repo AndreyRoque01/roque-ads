@@ -1355,5 +1355,50 @@ Objetivo: ${objetivo}`;
   });
 })();
 </script>
+  <script>
+(() => {
+  const problema = document.querySelector(".problema");
+
+  if (!problema || !("IntersectionObserver" in window)) {
+    return;
+  }
+
+  const intro = problema.querySelector(".problema-intro");
+  const lista = problema.querySelector(".problemas-lista");
+  const itens = [...problema.querySelectorAll(".problemas-lista article")];
+
+  problema.classList.add("problema-animavel");
+
+  itens.forEach((item, index) => {
+    item.style.setProperty(
+      "--problema-delay",
+      `${index * 170}ms`
+    );
+  });
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        entry.target.classList.add("visivel");
+        obs.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.18,
+      rootMargin: "0px 0px -8% 0px"
+    }
+  );
+
+  if (intro) observer.observe(intro);
+
+  if (lista) observer.observe(lista);
+
+  itens.forEach((item) => {
+    observer.observe(item);
+  });
+})();
+</script>
 </body>
 </html>
