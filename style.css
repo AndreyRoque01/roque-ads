@@ -3660,3 +3660,211 @@ h3,
   }
 
 }
+/* =========================================================
+   TABLET VERTICAL — AJUSTE ESPECÍFICO
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+  /* ---------- CABEÇALHO ---------- */
+
+  .cabecalho {
+    padding: 22px 28px;
+  }
+
+  .menu {
+    gap: 14px;
+  }
+
+  .menu a {
+    font-size: 13px;
+  }
+
+
+  /* ---------- INÍCIO ---------- */
+
+  .hero {
+    min-height: auto;
+    padding: 110px 40px;
+  }
+
+  .hero h1 {
+    font-size: clamp(52px, 7vw, 64px);
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .descricao {
+    max-width: 620px;
+  }
+
+
+  /* ---------- PRESENÇA DIGITAL ---------- */
+
+  .problema {
+    padding: 95px 40px;
+  }
+
+  .problema-intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .problema-intro h2 {
+    max-width: 700px;
+  }
+
+  .problema-intro > p:not(.sobretitulo) {
+    max-width: 700px;
+  }
+
+
+  /* ---------- SERVIÇOS ---------- */
+
+  .servicos {
+    padding: 95px 40px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+  }
+
+  .card {
+    min-height: auto;
+  }
+
+
+  /* ---------- SITE x LANDING PAGE ---------- */
+
+  .comparacao-web {
+    padding: 95px 40px;
+  }
+
+  .comparacao-web-abas {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+  }
+
+  .comparacao-web-painel {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* ---------- COMO FUNCIONA ---------- */
+
+  .processo {
+    min-height: auto;
+    padding: 100px 40px;
+  }
+
+  .processo-intro {
+    max-width: 700px;
+    margin-bottom: 55px;
+  }
+
+  .passos {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+    gap: 0;
+  }
+
+  .passo {
+    padding-top: 26px;
+    padding-bottom: 30px;
+  }
+
+
+  /* ---------- ATUAÇÃO ---------- */
+
+  .atuacao {
+    min-height: auto;
+    padding: 100px 40px;
+  }
+
+  .atuacao-conteudo {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    max-width: 760px;
+  }
+
+  .atuacao-texto {
+    max-width: 650px;
+  }
+
+  .atuacao h2 {
+    font-size: 50px;
+    max-width: 650px;
+  }
+
+  .atuacao-mapa {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+
+  /* ---------- SOBRE ---------- */
+
+  .sobre {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 45px;
+    max-width: 760px;
+    padding: 100px 40px;
+  }
+
+  .sobre h2 {
+    max-width: 680px;
+  }
+
+  .sobre-destaque {
+    min-height: 300px;
+  }
+
+
+  /* ---------- DIAGNÓSTICO ---------- */
+
+  .diagnostico {
+    padding: 100px 40px;
+  }
+
+  .diagnostico-intro,
+  .formulario-diagnostico {
+    max-width: 760px;
+  }
+
+  .formulario-diagnostico {
+    grid-template-columns: 1fr;
+  }
+
+  .campo-completo,
+  .botao-diagnostico {
+    grid-column: auto;
+  }
+
+
+  /* ---------- CONTATO ---------- */
+
+  .contato {
+    min-height: auto;
+    padding: 100px 40px;
+  }
+
+  .contato-conteudo {
+    grid-template-columns: 1fr;
+    max-width: 760px;
+    gap: 50px;
+  }
+
+  .contato-intro {
+    max-width: 650px;
+  }
+
+  .contato-painel {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}
