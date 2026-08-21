@@ -2821,10 +2821,31 @@ h3,
 /* ===== AJUSTE PARA DESKTOPS GRANDES ===== */
 @media (min-width: 1400px) {
 
-    .processo {
-        min-height: 100vh;
-        box-sizing: border-box;
-    }
+  /* INÍCIO */
+  .hero {
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* SEÇÕES CURTAS */
+  .processo,
+  .atuacao,
+  .sobre,
+  .contato {
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+
+  /* CENTRALIZAÇÃO VERTICAL */
+  .processo,
+  .sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
 }
-
